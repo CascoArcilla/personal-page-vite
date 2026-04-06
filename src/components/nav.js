@@ -1,27 +1,36 @@
+import "../css/nav.css";
+
 export function nav() {
+    document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("nav-btn")) {
+            movePageTo(e.target.getAttribute("data-id"));
+        }
+    });
+
     return `
 <nav class="nav-ul">
-    <button class="nav-btn" onclick="movePageTo('inicio')">Inicio</button>
-    <button class="nav-btn" onclick="movePageTo('basic-info')">Sobre mi</button>
+    <button class="nav-btn" data-id="inicio">Inicio</button>
+    <button class="nav-btn" data-id="basic-info">Sobre mi</button>
     <div class="wrap-dropdown">
-        <button class="nav-btn" onclick="movePageTo('knowledge')">Conocimientos</button>
+        <button class="nav-btn" data-id="knowledge">Conocimientos</button>
         <div class="dropdown">
-            <button class="nav-btn" onclick="movePageTo('languajes')">Lenguajes de programación</button>
-            <button class="nav-btn" onclick="movePageTo('sgbds-use')">SGBDS usados</button>
-            <button class="nav-btn" onclick="movePageTo('developer-web')">Desarrollo web</button>
-            <button class="nav-btn" onclick="movePageTo('tools')">Herramienas</button>
-            <button class="nav-btn" onclick="movePageTo('plus')">Otros</button>
-            <button class="nav-btn" onclick="movePageTo('uml')">Modelado UML</button>
+            <button class="nav-btn" data-id="languajes">Lenguajes de programación</button>
+            <button class="nav-btn" data-id="sgbds-use">SGBDS usados</button>
+            <button class="nav-btn" data-id="developer-web">Desarrollo web</button>
+            <button class="nav-btn" data-id="tools">Herramienas</button>
+            <button class="nav-btn" data-id="plus">Otros</button>
+            <button class="nav-btn" data-id="uml">Modelado UML</button>
         </div>
     </div>
-    <button class="nav-btn" onclick="movePageTo('exp')">Experiencia</button>
-    <button class="nav-btn" onclick="movePageTo('projects')">Proyectos</button>
+    <button class="nav-btn" data-id="exp">Experiencia</button>
+    <button class="nav-btn" data-id="projects">Proyectos</button>
 </nav>
 `
 }
 
+
 /* Move to exact point of secction by id in page */
-function movePageTo(idSecction) {
+const movePageTo = (idSecction) => {
     let heightNav = document.getElementsByClassName("nav-ul")[0].clientHeight;
     let marginTopTargetPostion = 20;
 

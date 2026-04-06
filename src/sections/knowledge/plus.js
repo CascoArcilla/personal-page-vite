@@ -1,3 +1,5 @@
+import "../../css/plus.css";
+
 export function plus() {
     return `
 <article id="plus" class="plus">

@@ -1,0 +1,97 @@
+/*
+############
+Conocimientos plus
+############
+*/
+.plus ul {
+    border-radius: var(--section-radius);
+    padding: 2rem;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: var(--no-surface);
+}
+
+.plus ul li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: var(--section-radius);
+    animation: plus-scale 3s infinite;
+}
+
+@keyframes plus-scale {
+
+    0%,
+    100% {
+        background: none;
+    }
+
+    25% {
+        background-color: var(--tertary);
+    }
+
+    50% {
+        background: none;
+    }
+}
+
+.plus ul li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.plus ul li:nth-child(2) {
+    animation-delay: 0.75s;
+}
+
+.plus ul li:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.plus ul li:nth-child(4) {
+    animation-delay: 2.25s;
+}
+
+.plus ul li p {
+    flex: 1;
+    font-size: x-large;
+    font-weight: bold;
+    padding: var(--section-py) 0;
+}
+
+.plus ul li p:not(:empty) {
+    border: 1px solid var(--text-color);
+    background-color: var(--alter-text-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+@media (width <=770px) {
+    .plus ul li:nth-child(odd) {
+        justify-content: flex-start;
+    }
+
+    .plus ul li:nth-child(even) {
+        justify-content: flex-end;
+    }
+
+    .plus ul li p:empty {
+        display: none;
+    }
+
+    .plus ul li p {
+        width: 70%;
+        flex: none;
+    }
+}
+
+@media (width <=690px) {
+    .plus ul li p {
+        font-size: large;
+    }
+}
+
+@media (width <=425px) {
+    .plus ul li p {
+        width: 90%;
+    }
+}

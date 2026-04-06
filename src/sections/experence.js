@@ -1,3 +1,5 @@
+import "../css/exp.css";
+
 export function experence() {
     return `
 <section id="exp" class="expe">

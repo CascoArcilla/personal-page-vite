@@ -1,3 +1,5 @@
+import "../../css/uml.css";
+
 export function uml() {
     return `
 <article id="uml" class="uml">

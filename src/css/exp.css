@@ -1,0 +1,43 @@
+/*
+------------------
+Experiencia
+------------------
+*/
+.expe {
+    border-radius: var(--section-radius);
+    border-left: 3px solid var(--text-color);
+    border-right: 3px solid var(--text-color);
+}
+
+.expe article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expe article:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.expe article header {
+    margin-bottom: 1rem;
+}
+
+.expe article .info {
+    width: 60%;
+}
+
+@media (width <=690px) {
+    .expe {
+        border: none;
+    }
+
+    .expe article header {
+        padding: 0 var(--phone-padding);
+    }
+
+    .expe article .info {
+        width: 100%;
+        padding: 0 var(--phone-padding);
+    }
+}

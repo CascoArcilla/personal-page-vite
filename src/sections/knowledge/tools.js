@@ -1,3 +1,5 @@
+import "../../css/tools.css";
+
 export function tools() {
     return `
 <article id="tools" class="tools">
