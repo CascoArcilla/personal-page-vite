@@ -1,33 +1,38 @@
 import "../../css/uml.css";
+import relacional from "../../assets/img/relacional.jpg";
+import secuencia from "../../assets/img/secuencia.png";
+import classUml from "../../assets/img/class.jpg";
+import activity from "../../assets/img/activity.png";
+import cu from "../../assets/img/cu.webp";
 
 export function uml() {
-    const urlBase = "/src/assets/img/";
     const liSelect = "var(--primary)";
     const liUnselect = "var(--alter-text-color)";
-    const namesUml = [
-        "relacional.jpg",
-        "secuencia.png",
-        "class.jpg",
-        "activity.png",
-        "cu.webp"
+    const images = [
+        relacional,
+        secuencia,
+        classUml,
+        activity,
+        cu
     ];
 
     document.addEventListener("DOMContentLoaded", () => {
         const showUml = document.querySelector(".target-uml");
         const listUml = document.querySelectorAll(".item-uml");
 
-        showUml.style.backgroundImage = `url(${urlBase}${namesUml[0]})`;
+        showUml.style.backgroundImage = `url(${images[0]})`;
         listUml[0].style.backgroundColor = liSelect;
+
         let index = 1;
         let before = listUml[0];
 
         setInterval(() => {
             before.style.backgroundColor = liUnselect;
-            showUml.style.backgroundImage = `url(${urlBase}${namesUml[index]})`;
+            showUml.style.backgroundImage = `url(${images[index]})`;
             listUml[index].style.backgroundColor = liSelect;
             before = listUml[index];
             index++;
-            if (index === namesUml.length) {
+            if (index === images.length) {
                 index = 0;
             }
         }, 2500);
