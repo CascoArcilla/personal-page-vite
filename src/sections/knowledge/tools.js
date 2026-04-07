@@ -4,7 +4,7 @@ import github from "../../assets/img/github-logo.png";
 import figma from "../../assets/img/figma-logo.png";
 import blender from "../../assets/img/blender-logo.png";
 import slack from "../../assets/img/slack-logo.png";
-import phpmyadmin from "../../assets/img/phpmyadmin-logo.png";
+import phpmyadmin from "../../assets/img/myadmin-logo.png";
 import visualstudio from "../../assets/img/vscode-logo.png";
 
 export function tools() {
