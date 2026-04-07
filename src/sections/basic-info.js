@@ -1,3 +1,5 @@
+import team from "../assets/img/team.png"
+
 export function basicInfo() {
     return `
 <section class="my-name">
@@ -26,7 +28,7 @@ export function basicInfo() {
     </p>
     </article>
 </div>
-<img class="icon" src="assets/imgs/team.png" alt="icono de equipo">
+<img class="icon" src="${team}" alt="icono de equipo">
 </section>
 `
 }

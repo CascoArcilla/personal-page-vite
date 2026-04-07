@@ -34,6 +34,7 @@ Modelado y diagrmas
     font-size: large;
     text-align: center;
     font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 .wrap-uml ul li:not(:last-child) {
@@ -45,30 +46,16 @@ Modelado y diagrmas
     background-repeat: no-repeat;
     background-position: center;
     width: 50%;
-    animation: diagramsUlm 12s infinite cubic-bezier(0, 1.35, 0.4, 1.12);
     border-radius: var(--section-radius);
 }
 
-@keyframes diagramsUlm {
-    0% {
-        background-image: url("../assets/imgs/uml.png");
-    }
-
-    25% {
-        background-image: url("../assets/imgs/ER.jpg");
-    }
-
-    50% {
-        background-image: url("../assets/imgs/class.jpg");
-    }
-
-    75% {
-        background-image: url("../assets/imgs/cu.webp");
-    }
-
-    100% {
-        background-image: url("../assets/imgs/uml.png");
-    }
+.wrap-uml aside {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    background-image: url(../assets/img/relacional.jpg);
+    border-radius: var(--section-radius);
 }
 
 @media (width <=770px) {

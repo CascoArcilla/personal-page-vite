@@ -1,6 +1,38 @@
 import "../../css/uml.css";
 
 export function uml() {
+    const urlBase = "/src/assets/img/";
+    const liSelect = "var(--primary)";
+    const liUnselect = "var(--alter-text-color)";
+    const namesUml = [
+        "relacional.jpg",
+        "secuencia.png",
+        "class.jpg",
+        "activity.png",
+        "cu.webp"
+    ];
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const showUml = document.querySelector(".target-uml");
+        const listUml = document.querySelectorAll(".item-uml");
+
+        showUml.style.backgroundImage = `url(${urlBase}${namesUml[0]})`;
+        listUml[0].style.backgroundColor = liSelect;
+        let index = 1;
+        let before = listUml[0];
+
+        setInterval(() => {
+            before.style.backgroundColor = liUnselect;
+            showUml.style.backgroundImage = `url(${urlBase}${namesUml[index]})`;
+            listUml[index].style.backgroundColor = liSelect;
+            before = listUml[index];
+            index++;
+            if (index === namesUml.length) {
+                index = 0;
+            }
+        }, 2500);
+    });
+
     return `
 <article id="uml" class="uml">
     <header>
@@ -9,11 +41,11 @@ export function uml() {
     <div class="wrap-uml">
         <div class="back-diagram"></div>
         <ul>
-            <li class="e-r">Diagramas Entidad-Relación (ER)</li>
-            <li>Diagramas Secuencia</li>
-            <li class="class">Diagramas Clases</li>
-            <li>Diagramas Actividad</li>
-            <li class="c-u">Diagramas Casos de uso</li>
+            <li class="item-uml" data-name-uml="relacional.jpg">Diagrama de Modelo Relacional</li>
+            <li class="item-uml" data-name-uml="secuencia.png">Diagrama de Secuencia</li>
+            <li class="item-uml" data-name-uml="class.jpg">Diagrama de Clases</li>
+            <li class="item-uml" data-name-uml="activity.png">Diagrama de Actividad</li>
+            <li class="item-uml" data-name-uml="cu.webp">Diagrama de Casos de uso</li>
         </ul>
         <aside class="target-uml">
         </aside>
@@ -21,4 +53,3 @@ export function uml() {
 </article>
     `
 }
-
