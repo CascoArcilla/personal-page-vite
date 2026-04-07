@@ -1,3 +1,4 @@
+import "../../css/knowledge.css";
 import { languages } from "./languages.js";
 import { useSGBD } from "./use-sgbd.js";
 import { developerWeb } from "./developer-web.js";

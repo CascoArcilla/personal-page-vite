@@ -1,3 +1,12 @@
+import "../../css/developer-web.css";
+import html from "../../assets/img/html.png";
+import css from "../../assets/img/css.png";
+import react from "../../assets/img/react.png";
+import bootstrap from "../../assets/img/bootstrap.png";
+import tailwindcss from "../../assets/img/tailwindcss.png";
+import remix from "../../assets/img/remix-r.png";
+import django from "../../assets/img/django.png";
+
 export function developerWeb() {
     return `
 <article id="developer-web">
@@ -6,25 +15,25 @@ export function developerWeb() {
     </header>
     <ul>
         <li>
-            <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-programming/512/css-512.png" alt="logo de css">
+            <img src="${css}" alt="logo de css" class="item-developer-web">
         </li>
         <li>
-            <img src="assets/imgs/html.png" alt="logo de html">
+            <img src="${html}" alt="logo de html" class="item-developer-web">
         </li>
         <li>
-            <img src="https://miro.medium.com/v2/resize:fit:522/0*Hdm7hBTZ-hKlbtlV.png" alt="logo de react">
+            <img src="${react}" alt="logo de react" class="item-developer-web">
         </li>
         <li>
-            <img src="https://images.seeklogo.com/logo-png/38/2/bootstrap-5-logo-png_seeklogo-386607.png"
-            alt="logo de bootstrap">
+            <img src="${bootstrap}" alt="logo de bootstrap" class="item-developer-web">
         </li>
         <li>
-            <img src="https://images.icon-icons.com/2699/PNG/512/tailwindcss_logo_icon_167923.png"
-            alt="logo de tailwind css">
+            <img src="${tailwindcss}" alt="logo de tailwind css" class="item-developer-web">
         </li>
         <li>
-            <img src="https://www.datocms-assets.com/205/1667581660-remix.svg?auto=format&fit=max&w=1200"
-            alt="logo remix">
+            <img src="${remix}" alt="logo remix" class="item-developer-web">
+        </li>
+        <li>
+            <img src="${django}" alt="logo django" class="item-developer-web">
         </li>
     </ul>
 </article>

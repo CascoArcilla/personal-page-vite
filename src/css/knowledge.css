@@ -1,0 +1,34 @@
+/*
+------------------
+Conocimientos
+------------------
+*/
+.know {
+    border-top: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
+}
+
+.know article {
+    margin-bottom: 3rem;
+}
+
+.know article:last-child {
+    margin-bottom: 0;
+}
+
+.know header {
+    margin-bottom: 2rem;
+}
+
+.know img {
+    max-width: 200px;
+    filter: drop-shadow(2px 4px 4px var(--text-color));
+}
+
+.know ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}

@@ -1,3 +1,8 @@
+import mysql from "../../assets/img/mysql.webp";
+import mariadb from "../../assets/img/mariadb.png";
+import postgressql from "../../assets/img/postgre.png";
+import mongodb from "../../assets/img/mongo.png";
+
 export function useSGBD() {
     return `
 <article id="sgbds-use">
@@ -6,18 +11,16 @@ export function useSGBD() {
     </header>
     <ul>
         <li>
-            <img src="https://brandlogo.org/wp-content/uploads/2024/02/MySQL-Logo-300x300.png.webp" alt="logo de mysql">
+            <img src="${mysql}" alt="logo de mysql" class="item-developer-web">
         </li>
         <li>
-            <img src="https://images.icon-icons.com/2699/PNG/512/mariadb_logo_icon_168996.png" alt="logo de mariadb">
+            <img src="${mariadb}" alt="logo de mariadb" class="item-developer-web mariadb">
         </li>
         <li>
-            <img src="https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png"
-            alt="logo de postgressql">
+            <img src="${postgressql}" alt="logo de postgressql" class="item-developer-web">
         </li>
         <li>
-            <img src="https://images.icon-icons.com/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png"
-            alt="logo de mongodb">
+            <img src="${mongodb}" alt="logo de mongodb" class="item-developer-web">
         </li>
     </ul>
 </article>
