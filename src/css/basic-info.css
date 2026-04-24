@@ -56,6 +56,11 @@ Sobre mi
     border-right: 3px solid var(--text-color);
 
     text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .about-me h2 {
@@ -71,8 +76,7 @@ Sobre mi
 }
 
 .about-me img {
-    max-width: unset;
-    width: 400px;
+    height: max-content;
 }
 
 @media (prefers-color-scheme: dark) {
