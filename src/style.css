@@ -103,8 +103,6 @@
 }
 
 #app {
-  width: 100vw;
-  min-height: 100dvh;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;

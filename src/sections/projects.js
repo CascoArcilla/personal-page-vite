@@ -6,6 +6,9 @@ export function projects() {
     <header>
         <h2>Proyectos</h2>
     </header>
+    <article>
+        <h3>Trabajando en esta sección...</h3>
+    </article>
 </section>
     `
 }
