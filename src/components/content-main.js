@@ -7,9 +7,6 @@ import { projects } from "../sections/projects.js";
 export function contentMain() {
     return `
 <main>
-  <h1>
-    Hola, bienvenido
-  </h1>
   ${basicInfo()}
   ${knowledge()}
   ${experence()}

@@ -3,14 +3,23 @@ import team from "../assets/img/team.png"
 export function basicInfo() {
     return `
 <section class="my-name">
-    <article class="center">
-        <p style="font-size: xx-large;">Mi nombre es</p>
-        <h2>Norberto Montalvo García</h2>
-    </article>
-    <article class="center">
-        <img class="photo" src="https://avatars.githubusercontent.com/u/120123220?v=4"
-        alt="rostro de norberto montalvo garcia">
-    </article>
+    <header>
+        <h1>
+            ¡Hola, bienvenido!
+        </h1>
+    </header>
+
+    <div class="wrap-info">
+        <article>
+            <p style="font-size: xx-large;">Mi nombre es</p>
+            <h2>Norberto Montalvo García</h2>
+        </article>
+
+        <article class="center">
+            <img class="photo" src="https://avatars.githubusercontent.com/u/120123220?v=4"
+                alt="rostro de norberto montalvo garcia">
+        </article>
+    </div>
 </section>
 
 <section id="basic-info" class="about-me">
