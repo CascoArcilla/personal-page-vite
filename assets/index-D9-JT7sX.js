@@ -18,32 +18,41 @@
 </nav>
 `}var t=e=>{let t=document.getElementsByClassName(`nav-ul`)[0].clientHeight;if(e==`inicio`){scrollTo({top:0});return}let n=document.getElementById(e).getBoundingClientRect().top-t-20;scrollBy({top:n})},n=`/personal-page-vite/assets/team-CJZbk3nX.png`;function r(){return`
 <section class="my-name">
-<article class="center">
-    <p style="font-size: xx-large;">Mi nombre es</p>
-    <h2>Norberto Montalvo García</h2>
-</article>
-<article class="center">
-    <img class="photo" src="https://avatars.githubusercontent.com/u/120123220?v=4"
-    alt="rostro de norberto montalvo garcia">
-</article>
+    <header>
+        <h1>
+            ¡Hola, bienvenido!
+        </h1>
+    </header>
+
+    <div class="wrap-info">
+        <article>
+            <p style="font-size: xx-large;">Mi nombre es</p>
+            <h2>Norberto Montalvo García</h2>
+        </article>
+
+        <article class="center">
+            <img class="photo" src="https://avatars.githubusercontent.com/u/120123220?v=4"
+                alt="rostro de norberto montalvo garcia">
+        </article>
+    </div>
 </section>
 
 <section id="basic-info" class="about-me">
-<div class="wrap-info">
-    <header>
-    <h2>Sobre mí</h2>
-    </header>
-    <article>
-    <p>
-        Egresado de ingeniería en sistemas computacionales con enfoque en el desarrollo de software,
-        autodidacta, con capacidad para trabajar y coordinar un pequeño equipo, gestionar proyectos
-        pequeños e interpretar requisitos. Uso de tecnologías para la comunicación y administración de
-        proyectos. Actualmente con mayor conocimiento en el desarrollo web. Capacidad de adaptación
-        frente a problemas nuevos, destacado como una persona sociable en el trabajo y el equipo.
-    </p>
-    </article>
-</div>
-<img class="icon" src="${n}" alt="icono de equipo">
+    <img class="icon" src="${n}" alt="icono de equipo">
+    <div class="wrap-info">
+        <header>
+        <h2>Sobre mí</h2>
+        </header>
+        <article>
+        <p>
+            Egresado de ingeniería en sistemas computacionales con enfoque en el desarrollo de software,
+            autodidacta, con capacidad para trabajar y coordinar un pequeño equipo, gestionar proyectos
+            pequeños e interpretar requisitos. Uso de tecnologías para la comunicación y administración de
+            proyectos. Actualmente con mayor conocimiento en el desarrollo web. Capacidad de adaptación
+            frente a problemas nuevos, destacado como una persona sociable en el trabajo y el equipo.
+        </p>
+        </article>
+    </div>
 </section>
 `}var i=`/personal-page-vite/assets/php-TO-LBpev.png`,a=`/personal-page-vite/assets/C-CI8GFbzj.png`,o=`/personal-page-vite/assets/Java-CE2wooCb.png`,s=`/personal-page-vite/assets/Kotlin-CUL6Sce1.png`,c=`/personal-page-vite/assets/js-Cqmxx4SW.png`,l=`/personal-page-vite/assets/python-logo-CpjGiCMp.webp`;function u(){return`
 <article id="languajes" class="languajes">
@@ -231,10 +240,10 @@
 <section id="knowledge" class="know">
 <header>
     <h2>Conocimientos</h2>
-    <p>
-    Aquí plasmo los conocimientos y tecnologías que he usado
-    a lo largo de la carrera, y como estudiante
-    autodidacta
+    <p class="desc-know">
+        Aquí plasmo los conocimientos y tecnologías que he usado
+        a lo largo de la carrera, y como estudiante
+        autodidacta
     </p>
 </header>
 ${u()}
@@ -249,16 +258,43 @@ ${R()}
     <header>
         <h2>Experiencia</h2>
     </header>
+
     <article>
         <header>
-            <h3>Pensemos Web, desarrollo FrondEnd:</h3>
-            <p>Aproximadamente de Marzo 2023 a Octubre 2023</p>
+            <h3>Proyecto académico de residencia ampliada</h3>
+            <p>Agosto 2025 - Marzo 2026</p>
         </header>
         <p class="info">
-            La experiencia obtenida fue el desarrollo deproyectosFrondEnd
-            usando la metodología ágil Scrum, uso de Jira para gestar el proyecto,
-            trabajar en equipo y usar Slack para la comunicación. Usar Git,
-            Github y Bitbucket para controlar las versiones de los sitios web.
+            Recopilación e interpretación de requisitos funcionales y no funcionales, diseño del sistema (uso de UML),
+            metodología Scrum, planificaciones de tareas, metas, gestión de tiempo y generación de manuales. Uso de Docker
+            para desplegar el proyecto realizado con Django y Apache para recibir solicitudes. El proyecto consistió en
+            implementar diferentes técnicas sensoriales para recolectar y exportar datos de sesiones sensoriales.
+        </p>
+    </article>
+
+    <article>
+        <header>
+            <h3>Proyecto integrador de la carrera</h3>
+            <p>Agosto 2024 - Diciembre 2024</p>
+        </header>
+        <p class="info">
+            Con el objetivo de crear una app de Android (con Android Studio) con un pequeño servicio web usando PHP para
+            los lugares turísticos del municipio Tezonapa, asumí el papel de líder de equipo para coordinar tareas a
+            compañeros de semestres mas bajos, interpretamos requisitos, establecí tiempos usando la metodología de
+            desarrollo clásica cascada, siendo yo el encargado del desarrollo de la aplicación y servicio.
+        </p>
+    </article>
+
+    <article>
+        <header>
+            <h3>Servicio Social de la carrera</h3>
+            <p>Julio 2024 - Enero 2025</p>
+        </header>
+        <p class="info">
+            Durante este periodo me asignaron desarrollar una aplicación Android de
+            realidad aumentada usando Unity y Vuforia para un libro de sexto de primaria,
+            aprendí a realizar modelos 3D con la herramienta de Blender, usé el
+            programa de software libre Inkscape para realizar las interfaces grafías.
         </p>
     </article>
 
@@ -273,18 +309,31 @@ ${R()}
             React, Bootstrap entre otras librerías.
         </p>
     </article>
+
+    <article>
+        <header>
+            <h3>Pensemos Web, desarrollo FrondEnd:</h3>
+            <p>Aproximadamente de Marzo 2023 a Octubre 2023</p>
+        </header>
+        <p class="info">
+            La experiencia obtenida fue el desarrollo deproyectosFrondEnd
+            usando la metodología ágil Scrum, uso de Jira para gestar el proyecto,
+            trabajar en equipo y usar Slack para la comunicación. Usar Git,
+            Github y Bitbucket para controlar las versiones de los sitios web.
+        </p>
+    </article>
 </section>
     `}function V(){return`
 <section id="projects">
     <header>
         <h2>Proyectos</h2>
     </header>
+    <article>
+        <h3>Trabajando en esta sección...</h3>
+    </article>
 </section>
     `}function H(){return`
 <main>
-  <h1>
-    Hola, bienvenido
-  </h1>
   ${r()}
   ${z()}
   ${B()}
