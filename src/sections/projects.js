@@ -1,4 +1,8 @@
 import '../css/projects.css';
+import { blackJack } from './projects/black-jack.js';
+import { tzServiceWeb } from './projects/tz-service-web.js';
+import { tzAndroid } from './projects/tz-android.js';
+import { sensoLab } from './projects/senso-lab.js';
 
 export function projects() {
     return `
@@ -6,9 +10,12 @@ export function projects() {
     <header>
         <h2>Proyectos</h2>
     </header>
-    <article>
-        <h3>Trabajando en esta sección...</h3>
-    </article>
+    <div class="container-projects">
+        ${blackJack()}
+        ${tzServiceWeb()}
+        ${tzAndroid()}
+        ${sensoLab()}
+    </div>
 </section>
-    `
+    `;
 }

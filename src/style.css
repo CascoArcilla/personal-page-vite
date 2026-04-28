@@ -9,9 +9,10 @@
   --alter-surface: #FFE4B5;
   --no-surface: #E2D9C5;
   --enfasis: #FFA07A;
+  --card-surface: #ffdb7285;
 
-  --text-title: #FF5F5F;
   --text-contrast-primary: #5E3507;
+  --card-title: #985035;
 
   --nav-height: 70px;
   --nav-buttons: 50px;
@@ -46,12 +47,12 @@
     --alter-surface: #1E1E1E;
     --no-surface: #252A26;
     --enfasis: #228B22;
+    --card-surface: #005c8d8c;
 
-    --text-title: #FF6347;
     --text-contrast-primary: #FFA500;
+    --card-title: #ff8558;
 
     --shadow: rgba(255, 255, 255, 0.1);
-
     --arrow-up: invert(1);
   }
 }
