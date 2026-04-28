@@ -1,4 +1,5 @@
 import '../css/projects.css';
+import { blackJack } from './projects/black-jack.js';
 
 export function projects() {
     return `
@@ -6,9 +7,12 @@ export function projects() {
     <header>
         <h2>Proyectos</h2>
     </header>
-    <article>
-        <h3>Trabajando en esta sección...</h3>
-    </article>
+    <div class="container-projects">
+        ${blackJack()}
+        ${blackJack()}
+        ${blackJack()}
+        ${blackJack()}
+    </div>
 </section>
-    `
+    `;
 }
