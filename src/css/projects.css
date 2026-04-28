@@ -45,7 +45,7 @@
     text-align: center;
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--text-title);
+    color: var(--card-title);
     line-height: 1.3;
 }
 
