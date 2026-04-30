@@ -121,13 +121,16 @@
 
 .item-project__btn--live {
     background-color: var(--primary);
-    color: var(--alter-text-color);
 }
 
 .item-project__btn--repo {
     background-color: var(--text-color);
     color: var(--alter-text-color);
     border: 2px solid var(--text-color);
+}
+
+.item-project__btn--repo svg {
+    fill: var(--alter-text-color);
 }
 
 .item-project__btn--repo:hover {

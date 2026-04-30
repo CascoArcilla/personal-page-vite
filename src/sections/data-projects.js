@@ -1,5 +1,6 @@
 import image_bj from "../assets/project_img/black-jack.webp";
 import tzServiceWebImg from "../assets/project_img/turitezo-sw.webp";
+import image_ec_controller from "../assets/project_img/ec_controll.webp";
 
 export const dataProjects = [
     {
@@ -21,6 +22,16 @@ export const dataProjects = [
         video_url: 'https://www.youtube.com/embed/SDv79hfHUSk',
         video_name: 'Turitezo',
         github: 'https://github.com/CascoArcilla/turitezo-android',
-        description: 'Aplicación móvil para explorar lugares turísticos.'
+        description: 'La aplicación para el proyecto Turitezo, creada para mostrar los lugares turisticos de mi municipio, por circustancias, no pude continuarla, fue un buen proyecto para seguir aprendiendo sobre el desarrollo de aplicaciones móviles con Android nativo.'
+    },
+    {
+        title: 'EC Controller (Proyecto en desarrollo)',
+        github: 'https://github.com/CascoArcilla/wats-control',
+        img: image_ec_controller,
+        description: 'Proyecto personal que estoy desarrollando para mi hogar. Un sistema para el control de consumo electrico y estimacion de costos (no incluye hardware).'
+    },
+    {
+        title: 'Senso Lab MX',
+        description: 'Trabajando para mostrarlo, es un sistema para agilizar la recolección y exportación de datos.'
     }
 ]
