@@ -323,174 +323,72 @@ ${R()}
         </p>
     </article>
 </section>
-    `}var V=`/personal-page-vite/assets/black-jack-CBm0Aek_.webp`;function H(){return`
-<article class="item-project">
-    <header class="item-project__header">
-        <h3 class="item-project__title">Simple Black Jack</h3>
-    </header>
-
-    <div class="item-project__media">
-        <img
-            class="item-project__img"
-            src="${V}"
-            alt="Captura de pantalla del proyecto Simple Black Jack"
-            loading="lazy"
-        />
-    </div>
-
-    <p class="item-project__description">
-        Juego creado por diversion, es un Black Jack jugable directamente en el navegador. Usando vanilla JavaScript, HTML y Tailwind CSS. Incluye lógica de baraja, turnos del jugador y del dealer, así como el manejo del estado del juego.
-    </p>
-
-    <footer class="item-project__footer">
-        <a
-            class="item-project__btn item-project__btn--live"
-            href="https://cascoarcilla.github.io/vanilla-blackjack/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Ver proyecto Simple Black Jack en vivo"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    `}var V=`
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+    <polyline points="15 3 21 3 21 9"/>
+    <line x1="10" y1="14" x2="21" y2="3"/>
+</svg>
+`,H=`
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+    aria-hidden="true">
+    <path
+        d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+    />
+</svg>
+`;function U(e){console.log(e);let t=``,n=``,r=``;return e.img?t=`<img class="item-project__img" src="${e.img}" alt="Captura de pantalla del proyecto ${e.title}" loading="lazy" />`:e.video_url&&(t=`<iframe class="item-project__video" width="315" height="576" src="${e.video_url}" title="${e.video_name}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allowfullscreen></iframe>`),e.live&&(n=`<a class="item-project__btn item-project__btn--live" href="${e.live}" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto ${e.title} en vivo">
+            ${V}
             Ver proyecto
-        </a>
-        <a
-            class="item-project__btn item-project__btn--repo"
-            href="https://github.com/CascoArcilla/vanilla-blackjack"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Ver repositorio de Simple Black Jack en GitHub"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>`),e.github&&(r=`<a class="item-project__btn item-project__btn--repo" href="${e.github}" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio de ${e.title} en GitHub">
+            ${H}
             GitHub
-        </a>
-    </footer>
-</article>
-    `}var U=`/personal-page-vite/assets/turitezo-sw-DMiLBp-T.webp`;function W(){return`
+        </a>`),`
 <article class="item-project">
     <header class="item-project__header">
-        <h3 class="item-project__title">Turitezo, servicio web</h3>
+        <h3 class="item-project__title">${e.title}</h3>
     </header>
 
     <div class="item-project__media">
-        <img
-            class="item-project__img"
-            src="${U}"
-            alt="Captura de pantalla del servicio web de Turitezo"
-            loading="lazy"
-        />
+        ${t}
     </div>
 
     <p class="item-project__description">
-        Un servicio web para la aplicacion de Turitezo, creado para mostrar los lugares 
-        turisticos de un municipio. Utilizado PHP vanilla, MySQL, con un Dockerfile 
-        para el despliegue de la aplicacion en Render partiendo de la imagen php:8.4-apache.
+        ${e.description}
     </p>
-    
+
     <footer class="item-project__footer">
-        <a
-            class="item-project__btn item-project__btn--live"
-            href="https://turitezo-service-web.onrender.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Ver proyecto"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            Ver proyecto
-        </a>
-        <a
-            class="item-project__btn item-project__btn--repo"
-            href="https://github.com/CascoArcilla/turitezo-serviceweb"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Ver repositorio de Simple Black Jack en GitHub"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
-        </a>
+        ${n}
+        ${r}
     </footer>
 </article>
-    `}function G(){return`
-<article class="item-project">
-    <header class="item-project__header">
-        <h3 class="item-project__title">Turitezo Android</h3>
-    </header>
-
-    <div class="item-project__media">
-        <iframe
-            class="item-project__video"
-            width="315"
-            height="576"
-            src="https://www.youtube.com/embed/SDv79hfHUSk"
-            title="Turitezo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
-    </div>
-
-    <p class="item-project__description">
-        La aplicación para el proyecto Turitezo, creada para mostrar los lugares 
-        turisticos de mi municipio, por circustancias, no pude continuarla, fue un 
-        buen proyecto para seguir aprendiendo sobre el desarrollo de aplicaciones 
-        móviles con Android nativo.
-    </p>
-    
-    <footer class="item-project__footer">
-        <a
-            class="item-project__btn item-project__btn--repo"
-            href="https://github.com/CascoArcilla/turitezo-android"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Ver repositorio de Turitezo Android en GitHub"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
-        </a>
-    </footer>
-</article>
-    `}var K=`/personal-page-vite/assets/senso_lab-B3Qp1EM5.webp`;function q(){return`
-<article class="item-project">
-    <header class="item-project__header">
-        <h3 class="item-project__title">Trabajando en ello...</h3>
-    </header>
-
-    <div class="item-project__media">
-        <img
-            class="item-project__img"
-            src="${K}"
-            alt="Captura de pantalla de Senso Lab MX"
-            loading="lazy"
-        />
-    </div>
-
-    <p class="item-project__description">
-        Trabajando para mostrarlo
-    </p>
-    
-    <footer class="item-project__footer">
-    </footer>
-</article>
-    `}function J(){return`
+    `}var W=[{title:`Simple Black Jack`,img:`/personal-page-vite/assets/black-jack-CBm0Aek_.webp`,live:`https://cascoarcilla.github.io/vanilla-blackjack/`,github:`https://github.com/CascoArcilla/vanilla-blackjack`,description:`Juego creado por diversion, es un Black Jack jugable directamente en el navegador. Usando vanilla JavaScript, HTML y Tailwind CSS. Incluye lógica de baraja, turnos del jugador y del dealer, así como el manejo del estado del juego.`},{title:`Turitezo, servicio web`,img:`/personal-page-vite/assets/turitezo-sw-DMiLBp-T.webp`,live:`https://turitezo-service-web.onrender.com/`,github:`https://github.com/CascoArcilla/turitezo-serviceweb`,description:`Un servicio web para la aplicacion de Turitezo, creado para mostrar los lugares turisticos de un municipio. Utilizado PHP vanilla, MySQL, con un Dockerfile para el despliegue de la aplicacion en Render partiendo de la imagen php:8.4-apache.`},{title:`Turitezo Android`,video_url:`https://www.youtube.com/embed/SDv79hfHUSk`,video_name:`Turitezo`,github:`https://github.com/CascoArcilla/turitezo-android`,description:`La aplicación para el proyecto Turitezo, creada para mostrar los lugares turisticos de mi municipio, por circustancias, no pude continuarla, fue un buen proyecto para seguir aprendiendo sobre el desarrollo de aplicaciones móviles con Android nativo.`},{title:`EC Controller (Proyecto en desarrollo)`,github:`https://github.com/CascoArcilla/wats-control`,img:`/personal-page-vite/assets/ec_controll-CiOoMIqd.webp`,description:`Proyecto personal que estoy desarrollando para mi hogar. Un sistema para el control de consumo electrico y estimacion de costos (no incluye hardware).`},{title:`Senso Lab MX`,description:`Trabajando para mostrarlo, es un sistema para agilizar la recolección y exportación de datos.`}];function G(){let e=``;return W.forEach(t=>{e+=U(t)}),`
 <section id="projects">
     <header>
         <h2>Proyectos</h2>
     </header>
     <div class="container-projects">
-        ${H()}
-        ${W()}
-        ${G()}
-        ${q()}
+        ${e}
     </div>
 </section>
-    `}function Y(){return`
+    `}function K(){return`
 <main>
   ${r()}
   ${z()}
   ${B()}
-  ${J()}
+  ${G()}
 </main>
 `}document.querySelector(`#app`).innerHTML=`
 ${e()}
-${Y()}
+${K()}
 `;
