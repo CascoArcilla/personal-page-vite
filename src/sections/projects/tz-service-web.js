@@ -1,5 +1,3 @@
-import tzServiceWebImg from "../../assets/project_img/turitezo-sw.webp";
-
 export function tzServiceWeb() {
     return `
 <article class="item-project">
@@ -10,7 +8,7 @@ export function tzServiceWeb() {
     <div class="item-project__media">
         <img
             class="item-project__img"
-            src="${tzServiceWebImg}"
+            src="./noimage.jpg"
             alt="Captura de pantalla del servicio web de Turitezo"
             loading="lazy"
         />

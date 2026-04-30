@@ -1,20 +1,21 @@
 import '../css/projects.css';
-import { blackJack } from './projects/black-jack.js';
-import { tzServiceWeb } from './projects/tz-service-web.js';
-import { tzAndroid } from './projects/tz-android.js';
-import { sensoLab } from './projects/senso-lab.js';
+import { projectElement } from './project-element.js';
+import { dataProjects } from './data-projects.js';
 
 export function projects() {
+    let renderProjects = ``;
+
+    dataProjects.forEach(project => {
+        renderProjects += projectElement(project);
+    });
+
     return `
 <section id="projects">
     <header>
         <h2>Proyectos</h2>
     </header>
     <div class="container-projects">
-        ${blackJack()}
-        ${tzServiceWeb()}
-        ${tzAndroid()}
-        ${sensoLab()}
+        ${renderProjects}
     </div>
 </section>
     `;
